@@ -3,7 +3,17 @@
 - 👀 I’m interested in... defi derivatives, MEV & arb opportunities. 
 - 🌱 I’m currently learning... Solidity, MEV, ReactJS, SQL scripting in Dune. I am continuously learning by building small web 3.0 applications with neat UX and a back-end with 100% code coverage 
 - 💞️ I’m looking to collaborate on ... I'd love to work with teams working to bring Defi to masses. I also want to work with teams working on MEV projects 
+
+# My Dapps
 - You can view all the dapps I built at [0kage-dapps](https://0kage-dapps.on.fleek.co/). Note that they work on Goerli.
+
+Following table gives more details
+
+| #        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
 
 
 # Contact Me
