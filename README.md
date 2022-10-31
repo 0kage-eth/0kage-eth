@@ -9,11 +9,11 @@
 
 Following table gives more details
 
-| #        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+| #        | Project           | Description  |  Demo Link | Status | Github Repo | Goerli Address | 
+| ------------- |:-------------:|:-----:| :------: | :--------: | :--------: | :---------: |
+| col 3 is      | right-aligned | $1600 | $1600 | $1600 | $1600 | $1600 |
+| col 2 is      | centered      |   $12 |  $12  |  $12  |  $12  |  $12 |
+| zebra stripes | are neat      |    $1 |  $1   |.  $1 | $1 |. $1 | 
 
 
 # Contact Me
