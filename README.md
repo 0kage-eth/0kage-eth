@@ -27,10 +27,11 @@ Following table gives more details
 
 # Contact Me
 - 📫 How to reach me ... mail me at 0kage.eth@gmail.com. 
-
-
-
 - Link to my Notion page: 
+https://wonderful-newsprint-e13.notion.site/0Kage-My-Work-c6c5496b56bf43f4a0e9a1f1b919460f
+- My twitter @0kage_eth
+- My mirror writings: https://mirror.xyz/0xd7Dd548772fF126999a1a02640beFA34C2ce470B
+
 
 
 
