@@ -16,9 +16,9 @@ Following table gives more details
 | 3 | 0Kage-Staking | Stake 0Kage to get rewards Kage (rKAGE) token based on a pre-defined rewards schedule      |    [0Kage-Staking](https://0kage-dapps.on.fleek.co/staking/stake) |  Completed   | [Github](https://github.com/0kage-eth/Staking-Rewards) | $1 |
 | 4 | 0Kage-Vesting | Become an employee of 0Kage Protocol & get 0Kage tokens vested over a time horizon with cliff period     |    [0Kage-Vesting](https://0kage-dapps.on.fleek.co/vesting/enter ) |  Completed   | [Github](https://github.com/0kage-eth/Token-Vesting) | $1 |
 | 5 | 0Kage-Lottery | Enter a decentralized lottery every day with 0Kage tokens. Random winner is automatically selected every day & 0Kage pool tokens distributed     |    [0Kage-Vesting](https://0kage-dapps.on.fleek.co/lottery/play) |  Completed   |[Github](https://github.com/0kage-eth/decentralized-lottery) | $1 |
-| 6 | 0Kage-MultiSig | Multi sig wallet for managing transactions      |    TBA |  Pending   | [Github](https://github.com/0kage-eth/ZeroKage-Token-Backend) | $1 | 
-| 7 | 0Kage-NFT | NFT Marketplace where users can buy & sale NFTs     |    TBA |  Pending   | [Github](https://github.com/0kage-eth/ZeroKage-Token-Backend) | $1 | 
-| 8 | 0Kage-DAO | 0Kage DAO that can change terms of staking reward emissions, lottery fees and vesting terms      |    TBA |  Pending   | [Github](https://github.com/0kage-eth/) | $1 |
+| 6 | 0Kage-MultiSig | Multi sig wallet for managing transactions      |    TBA |  Pending   | [Github](https://github.com/0kage-eth/MultiSigWallet) | $1 | 
+| 7 | 0Kage-NFT | NFT Marketplace where users can buy & sale NFTs     |    TBA |  Pending   | [Github](https://github.com/0kage-eth/nft-marketplace) | $1 | 
+| 8 | 0Kage-DAO | 0Kage DAO that can change terms of staking reward emissions, lottery fees and vesting terms      |    TBA |  Pending   | [Github](https://github.com/0kage-eth/LoansDAO) | $1 |
 | 9 | 0Kage-IDO | Whitelisting & initial token offering     |    TBA |  Pending   | NA | $1 |
 | 10 | Uniswap V2/V3 | Uniswap DEX factory and pooling     |    TBA |  Pending   | NA | $1 |
 | 11 | Aave Frontend | AAVE lending/borrowing     |    TBA |  Pending   | NA | $1 | 
