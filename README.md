@@ -11,18 +11,18 @@ Following table gives more details
 
 | #        | Project           | Description  |  Demo Link | Status | Github Repo | Goerli Address | 
 | ------------- |:-------------:|:-----:| :------: | :--------: | :--------: | :---------: |
-| 0Kage-Token-Controller      | 0Kage Token issuer | $1600 | $1600 | $1600 | $1600 | $1600 |
-| 0Kage-DEX      | Convert 0Kage→ Goerli ETH, add & remove liquidity to pool      |   $12 |  $12  |  $12  |  $12  |  $12 |
-| 0Kage-Staking | Stake 0Kage to get rewards Kage (rKAGE) token based on a pre-defined rewards schedule      |    $1 |  $1   |.  $1 | $1 |. $1 | 
-| 0Kage-Vesting | Become an employee of 0Kage Protocol & get 0Kage tokens vested over a time horizon with cliff period     |    $1 |  $1   |.  $1 | $1 |. $1 | 
-| 0Kage-Lottery | Enter a decentralized lottery every day with 0Kage tokens. Random winner is automatically selected every day & 0Kage pool tokens distributed     |    $1 |  $1   |.  $1 | $1 |. $1 | 
-| 0Kage-MultiSig | Multi sig wallet for managing transactions      |    $1 |  $1   |.  $1 | $1 |. $1 | 
-| 0Kage-NFT | NFT Marketplace where users can buy & sale NFTs     |    $1 |  $1   |.  $1 | $1 |. $1 | 
-| 0Kage-DAO | 0Kage DAO that can change terms of staking reward emissions, lottery fees and vesting terms      |    $1 |  $1   |.  $1 | $1 |. $1 | 
-| 0Kage-IDO | Whitelisting & initial token offering     |    $1 |  $1   |.  $1 | $1 |. $1 | 
-| Uniswap V2/V3 | Uniswap DEX factory and pooling     |    $1 |  $1   |.  $1 | $1 |. $1 | 
-| Aave Frontend | AAVE lending/borrowing     |    $1 |  $1   |.  $1 | $1 |. $1 | 
-| MEV Arbitrage | Simple DEX based arbitrage (flashbots)      |    $1 |  $1   |.  $1 | $1 |. $1 | 
+| 0Kage-Token-Controller      | 0Kage Token issuer | [0Kage-token](https://0kage-dapps.on.fleek.co/main/token) | $1600 | $1600 | $1600 | $1600 |
+| 0Kage-DEX      | Convert 0Kage→ Goerli ETH, add & remove liquidity to pool      |   [0Kage-DEX](https://0kage-dapps.on.fleek.co/dex/swap) |  $12  |  $12  |  $12  |  $12 |
+| 0Kage-Staking | Stake 0Kage to get rewards Kage (rKAGE) token based on a pre-defined rewards schedule      |    [0Kage-Staking](https://0kage-dapps.on.fleek.co/staking/stake) |  $1   |.  $1 | $1 |. $1 | 
+| 0Kage-Vesting | Become an employee of 0Kage Protocol & get 0Kage tokens vested over a time horizon with cliff period     |    [0Kage-Vesting](https://0kage-dapps.on.fleek.co/lottery/play) |  $1   |.  $1 | $1 |. $1 | 
+| 0Kage-Lottery | Enter a decentralized lottery every day with 0Kage tokens. Random winner is automatically selected every day & 0Kage pool tokens distributed     |    [0Kage-Vesting](https://0kage-dapps.on.fleek.co/vesting/enter) |  $1   |.  $1 | $1 |. $1 | 
+| 0Kage-MultiSig | Multi sig wallet for managing transactions      |    TBD |  $1   |.  $1 | $1 |. $1 | 
+| 0Kage-NFT | NFT Marketplace where users can buy & sale NFTs     |    TBD |  $1   |.  $1 | $1 |. $1 | 
+| 0Kage-DAO | 0Kage DAO that can change terms of staking reward emissions, lottery fees and vesting terms      |    TBD |  $1   |.  $1 | $1 |. $1 | 
+| 0Kage-IDO | Whitelisting & initial token offering     |    TBD |  $1   |.  $1 | $1 |. $1 | 
+| Uniswap V2/V3 | Uniswap DEX factory and pooling     |    TBD |  $1   |.  $1 | $1 |. $1 | 
+| Aave Frontend | AAVE lending/borrowing     |    TBD |  $1   |.  $1 | $1 |. $1 | 
+| MEV Arbitrage | Simple DEX based arbitrage (flashbots)      |    TBD |  $1   |.  $1 | $1 |. $1 | 
 
 
 
