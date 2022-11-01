@@ -1,8 +1,16 @@
 # About Me
 - 👋 Hi, I’m @0kage-eth... a defi builder, analyst and MEV searcher. I believe in capital markets, hard money, sovereignty and frictionless exchange of capital, ideas and culture - that is what draws me to crypto & defi. I believe in playing long term positive sum games.
 - 👀 I’m interested in... defi derivatives, MEV & arb opportunities. 
-- 🌱 I’m currently learning... Solidity, MEV, ReactJS, SQL scripting in Dune. I am continuously learning by building small web 3.0 applications with neat UX and a back-end with 100% code coverage 
+- I am continuously learning by building small web 3.0 applications with neat UX and a back-end with 100% code coverage 
 - 💞️ I’m looking to collaborate on ... I'd love to work with teams working to bring Defi to masses. I also want to work with teams working on MEV projects 
+
+# Languages/Frameworks
+- Web 3.0 - Solidity | Hardhat | Moralis | Subgraph
+- Backend - Nodejs
+- Frontend - React | NextJS |  Chakra 
+- Languages - Javascript | GraphQL 
+- Testing - Mocha | Chai
+- Database - SQL 
 
 # My Dapps
 - You can view all the dapps I built at [0kage-dapps](https://0kage-dapps.on.fleek.co/). Note that they work on Goerli.
