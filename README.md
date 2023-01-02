@@ -18,7 +18,6 @@
 
 # My Audits
 
-- PrePO - Audited PrePO code as part of `Code4rena` contest. Here is a list of [my findings](https://github.com/0kage-eth/my-audits/blob/main/code4rena/prePO/findings.md)
 
 # My Dapps
 - You can view all the dapps I built at [0kage-dapps](https://0kage-dapps.on.fleek.co/). Note that they work on Goerli.
