@@ -9,7 +9,7 @@
     - MEV searc collaborations
 
 # Languages/Frameworks
-- Web 3.0 - Solidity | Hardhat | Moralis | Subgraph
+- Web 3.0 - Solidity | Hardhat | Foundry | Moralis | Subgraph
 - Backend - Nodejs
 - Frontend - React | NextJS |  Chakra 
 - Languages - Javascript | GraphQL 
@@ -17,7 +17,17 @@
 - Database - SQL 
 
 # My Audits
-
+- PrePO
+- Tigris
+- GogoPool
+- Caviar
+- UXD Protocol
+- Timeswap
+- Numoen
+- Popcorn
+- Blueberry
+- Carapace
+- Surge (current)
 
 # My Dapps
 - You can view all the dapps I built at [0kage-dapps](https://0kage-dapps.on.fleek.co/). Note that they work on Goerli.
