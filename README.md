@@ -28,6 +28,7 @@
 - Blueberry
 - Carapace
 - Surge
+- Kairos
 - Assymetry
 - EigenLayer
 
