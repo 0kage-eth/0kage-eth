@@ -27,7 +27,9 @@
 - Popcorn
 - Blueberry
 - Carapace
-- Surge (current)
+- Surge
+- Assymetry
+- EigenLayer
 
 # My Dapps
 - You can view all the dapps I built at [0kage-dapps](https://0kage-dapps.on.fleek.co/). Note that they work on Goerli.
