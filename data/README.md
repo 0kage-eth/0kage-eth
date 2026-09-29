@@ -37,3 +37,14 @@ Use this file only for articles published elsewhere (Cyfrin blog, Substack, etc.
 ```json
 {"date": "2026-01-15", "title": "Title", "venue": "Cyfrin Blog", "link": "https://..."}
 ```
+
+## contributions.json
+Open source contributions. `prs` are listed newest first.
+```json
+{
+  "project": "Project name",
+  "repo": "https://github.com/org/repo",
+  "contribution": "One or two sentences on what you contributed.",
+  "prs": [{"number": 74, "date": "2025-03-21", "url": "https://github.com/org/repo/pull/74"}]
+}
+```

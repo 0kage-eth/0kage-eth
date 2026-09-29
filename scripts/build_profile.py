@@ -13,6 +13,7 @@ Build the GitHub profile README from:
   4. data/risk_research.json    - risk assessments, incident replays, tools, notes
   5. data/governance.json       - governance forum responses
   6. data/articles.json         - blogs / articles published outside Medium
+  8. data/contributions.json    - open source contributions (project, summary, PR links)
   7. Medium RSS feed            - articles at https://medium.com/@0kage, cached in
                                   data/medium_articles.json (used if the feed is unreachable)
 
@@ -297,6 +298,26 @@ def medium_articles():
 
 
 # --------------------------------------------------------------------------- #
+# open source contributions
+# --------------------------------------------------------------------------- #
+def render_contributions(items):
+    if not items:
+        return "_No contributions listed yet._"
+    lines = [
+        "| S.No | Project | Contribution | Pull Requests |",
+        "| ---: | ------- | ------------ | ------------- |",
+    ]
+    for i, c in enumerate(items, 1):
+        prs = sorted(c.get("prs", []), key=lambda p: p.get("date", ""), reverse=True)
+        pr_links = ", ".join(f"[#{p['number']}]({p['url']})" for p in prs)
+        lines.append(
+            f"| {i} | [{md_escape(c['project'])}]({c['repo']}) | "
+            f"{md_escape(c['contribution'])} | {pr_links} |"
+        )
+    return "\n".join(lines)
+
+
+# --------------------------------------------------------------------------- #
 # generic tables for manually curated sections
 # --------------------------------------------------------------------------- #
 def render_simple_table(items, columns, empty_msg):
@@ -353,6 +374,7 @@ def main():
 
     risk = load_json(os.path.join(DATA_DIR, "risk_research.json"), [])
     gov = load_json(os.path.join(DATA_DIR, "governance.json"), [])
+    contributions = load_json(os.path.join(DATA_DIR, "contributions.json"), [])
     log("Fetching Medium feed ...")
     articles = medium_articles()
     seen = {a["link"] for a in articles}
@@ -370,6 +392,7 @@ def main():
         "{{RISK_RESEARCH_TABLE}}": render_simple_table(
             risk, [("Date", "date"), ("Type", "type"), ("Protocol / Asset", "protocol"), ("Title", "title"), ("Link", "link")],
             "No risk research published yet."),
+        "{{CONTRIBUTIONS_TABLE}}": render_contributions(contributions),
         "{{GOVERNANCE_TABLE}}": render_simple_table(
             gov, [("Date", "date"), ("Forum / DAO", "forum"), ("Topic", "title"), ("Link", "link")],
             "No governance responses published yet."),

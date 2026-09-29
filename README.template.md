@@ -30,6 +30,10 @@ Risk assessments, liquidity analyses, incident replays, tools and reproducible c
 
 {{RISK_RESEARCH_TABLE}}
 
+# Open Source Contributions
+
+{{CONTRIBUTIONS_TABLE}}
+
 # Governance Forum Responses
 
 {{GOVERNANCE_TABLE}}

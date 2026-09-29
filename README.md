@@ -72,6 +72,13 @@ Risk assessments, liquidity analyses, incident replays, tools and reproducible c
 
 _No risk research published yet._
 
+# Open Source Contributions
+
+| S.No | Project | Contribution | Pull Requests |
+| ---: | ------- | ------------ | ------------- |
+| 1 | [Ethereum Clear Signing ERC-7730 Registry](https://github.com/ethereum/clear-signing-erc7730-registry) | Cyfrin's clear-signing review of ERC-7730 descriptors: added 181 EAS offchain attestations (ERC-8176 schema) covering Morpho, Kiln, Lido, Ondo, 1inch, Safe, Circle and others, registered the Cyfrin auditor profile, and re-signed 135 attestations over fully resolved descriptor hashes after documenting a hashing defect in the tooling. | [#2956](https://github.com/ethereum/clear-signing-erc7730-registry/pull/2956), [#2765](https://github.com/ethereum/clear-signing-erc7730-registry/pull/2765), [#2764](https://github.com/ethereum/clear-signing-erc7730-registry/pull/2764) |
+| 2 | [MetaMask Delegation Framework](https://github.com/MetaMask/delegation-framework) | Integration test suite written during the Cyfrin audits: delegation chains of varying depth, chains with caveats, mixed-authority chains (Hybrid, MultiSig, EIP-7702), mid-chain revocation, redemption batch-size limits, and allowance-depletion cases for the ERC20 streaming and transfer-amount enforcers. | [#74](https://github.com/MetaMask/delegation-framework/pull/74) |
+
 # Governance Forum Responses
 
 _No governance responses published yet._
