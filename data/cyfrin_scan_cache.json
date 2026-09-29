@@ -1,209 +1,981 @@
 {
-  "2023-03-07-linkpool_liquid_sd_index_pool.pdf": false,
-  "2023-03-13-beanstalk_wells_v0.1.pdf": false,
-  "2023-04-11-cyfrin-hyperliquid-dex-report.pdf": false,
-  "2023-06-01-sudoswap-report.pdf": true,
-  "2023-06-07-cyfrin-uniswap-v3-limit-orders.pdf": false,
-  "2023-06-13-cyfrin-drop-claim-report-v2.pdf": true,
-  "2023-06-16-cyfrin-beanstalk-wells.pdf": false,
-  "2023-08-25-cyfrin-stake-link.pdf": true,
-  "2023-08-26-cyfrin-dolomite-margin.pdf": true,
-  "2023-09-06-cyfrin-woosh.pdf": true,
-  "2023-09-12-cyfrin-beanstalk.pdf": false,
-  "2023-09-19-cyfrin-stakepet.pdf": true,
-  "2023-09-19-cyfrin-swapexchange.pdf": true,
-  "2023-10-13-cyfrin-beanstalk-bip-38.pdf": false,
-  "2023-11-03-cyfrin-streamr-v2.0.pdf": false,
-  "2023-11-05-cyfrin-farcaster-v1.0.pdf": false,
-  "2023-11-10-cyfrin-dexe-v2.0.pdf": true,
-  "2023-11-20-cyfrin-mode-earnm-v2.0.pdf": true,
-  "2024-01-10-cyfrin-wormhole-thermae-v2.1.pdf": true,
-  "2024-01-24-cyfrin-solidlyV3-v2.0.pdf": false,
-  "2024-02-23-cyfrin-swell-barracuda-v2.0.pdf": false,
-  "2024-04-06-cyfrin-beefy-finance-v2.0.pdf": false,
-  "2024-04-09-cyfrin-wormhole-evm-cctp-v2-1.pdf": true,
-  "2024-04-11-cyfrin-wormhole-evm-ntt-v2.pdf": true,
-  "2024-04-14-cyfrin-goldilocks-v1.1.pdf": false,
-  "2024-04-18-cyfrin-ondo-finance-v2.0.pdf": false,
-  "2024-05-02-cyfrin-beanstalk-bip-39-v1-2.pdf": false,
-  "2024-05-04-cyfrin-solidly-v2-memecore-v2-2.pdf": false,
-  "2024-05-24-cyfrin-linea-v2.0.pdf": false,
-  "2024-06-17-cyfrin-templedao-v2.1.pdf": false,
-  "2024-07-01-cyfrin-tunnl-v2.0.pdf": false,
-  "2024-07-10-cyfrin-casimir-v2.0.pdf": true,
-  "2024-07-13-cyfrin-zaros-v2.0.pdf": false,
-  "2024-07-18-cyfrin-securitize-redemptions-v2.0.pdf": false,
-  "2024-07-23-cyfrin-wormhole-NTT-Diff-v1.0.pdf": true,
-  "2024-08-10-cyfrin-securitize-vault-v1-v2.0.pdf": false,
-  "2024-08-15-cyfrin-earnm-dropbox-v2.0.pdf": false,
-  "2024-08-21-cyfrin-chaos-labs-risk-oracle-v2.0.pdf": false,
-  "2024-09-13-cyfrin-the-standard-smart-vault-v2.0.pdf": false,
-  "2024-09-17-cyfrin-stake-link-v2.0.pdf": true,
-  "2024-09-27-cyfrin-bima-v2.0.pdf": false,
-  "2024-10-04-cyfrin-wormhole-multigov-v2.0.pdf": true,
-  "2024-10-28-cyfrin-securitize-bridge-v2.0.pdf": false,
-  "2024-10-29-cyfrin-one-world-project-v2.0.pdf": false,
-  "2024-11-18-cyfrin-stake.link-metis-staking-v2.0.pdf": true,
-  "2024-11-26-cyfrin-m0-v2.0.pdf": true,
-  "2024-12-11-cyfrin-benqi-ignite-v2.0.pdf": false,
-  "2024-12-17-cyfrin-quantamm-v1.2.pdf": true,
-  "2024-12-17-cyfrin-securitize-redeem-swap-vault-nav-v2.0.pdf": false,
-  "2024-12-18-cyfrin-the-standard-auto-redemption-v2.0.pdf": false,
-  "2024-12-23-cyfrin-soneium-shibuya-v2.0.pdf": false,
-  "2025-01-06-cyfrin-linea-v2.2.pdf": false,
-  "2025-01-10-cyfrin-securitize-dstokenswap-v2.0.pdf": false,
-  "2025-01-20-cyfrin-stakedotlink-stakingproxy-v2.0.pdf": true,
-  "2025-02-03-cyfrin-securitize-dstokenswap2-v1.0.pdf": false,
-  "2025-02-24-cyfrin-d2-v2.1.pdf": false,
-  "2025-02-28-cyfrin-stakedotlink-v2.0.pdf": false,
-  "2025-03-10-cyfrin-pancakeswap-v3.0.pdf": true,
-  "2025-03-12-cyfrin-paladin-valkyrie-v2.0.pdf": false,
-  "2025-03-18-cyfrin-Metamask-DelegationFramework1-v2.0.pdf": true,
-  "2025-03-19-cyfrin-linea-spingame-v2.0.pdf": false,
-  "2025-03-28-cyfrin-rocko-refinance-v2.0.pdf": false,
-  "2025-04-01-cyfrin-Metamask-DelegationFramework2-v2.0.pdf": true,
-  "2025-04-06-cyfrin-benqi-collateral-migrator-v2.0.pdf": false,
-  "2025-04-09-cyfrin-matrixdock-v2.0.pdf": false,
-  "2025-04-24-cyfrin-cryptoart-v2.0.pdf": false,
-  "2025-04-24-cyfrin-dolomite-POLVaults-v2.0.pdf": true,
-  "2025-04-24-cyfrin-yieldfi-v2.0.pdf": false,
-  "2025-05-01-cyfrin-metamask-delegationFramework-part3-v2.0.pdf": true,
-  "2025-05-07-cyfrin-metamask-delegationFramework-part4-v2.0.pdf": true,
-  "2025-05-08-cyfrin-gas-aave3.3-v1.0.pdf": false,
-  "2025-05-16-cyfrin-ethena-timelock-v2.0.pdf": false,
-  "2025-05-19-cyfrin-stakedotlink-polygon-staking-v2.0.pdf": true,
-  "2025-05-23-cyfrin-securitize-solana-vault-v2.0.pdf": false,
-  "2025-06-02-cyfrin-evo-soulboundtoken-v2.0.pdf": false,
-  "2025-06-04-cyfrin-stakelink-pr152-linkmigrator-v2.0.pdf": false,
-  "2025-06-06-cyfrin-eulerswap-v2.1.pdf": false,
-  "2025-06-11-cyfrin-strata-predeposit-v2.1.pdf": false,
-  "2025-06-17-cyfrin-yieldfi-pr19-vytoken-v2.2.pdf": false,
-  "2025-06-30-cyfrin-linea-spingame-v2-v2.1.pdf": false,
-  "2025-07-04-cyfrin-remora-pledge-v2.0.pdf": false,
-  "2025-07-07-cyfrin-suzaku-core-v2.0.pdf": true,
-  "2025-07-14-cyfrin-ondo-global-markets-v2.0.pdf": false,
-  "2025-07-15-cyfrin-vii-v2.0.pdf": false,
-  "2025-07-17-cyfrin-pecunity-v2.0.pdf": false,
-  "2025-07-19-cyfrin-bunni-fee-override-hooklet-v2.0.pdf": false,
-  "2025-07-22-cyfrin-doryoku-v2.0.pdf": false,
-  "2025-07-23-cyfrin-securitize-onofframp-bridge-v2.1.pdf": false,
-  "2025-07-25-cyfrin-myriad-v2.0.pdf": false,
-  "2025-08-01-cyfrin-syntetika-v2.0.pdf": false,
-  "2025-08-02-cyfrin-stakelink-vesting-v2.0.pdf": false,
-  "2025-08-04-cyfrin-securitize-vaultv2-rwasegwrap-v2.2.pdf": false,
-  "2025-08-14-cyfrin-atum-evm-contracts-v2.0.pdf": false,
-  "2025-08-27-cyfrin-atum-tron-contracts-v2.1.pdf": false,
-  "2025-08-28-cyfrin-avant-max-v2.0.pdf": false,
-  "2025-08-29-cyfrin-atum-solana-v2.0.pdf": false,
-  "2025-08-29-cyfrin-securitize-solana-redemption-v2.0.pdf": false,
-  "2025-09-01-cyfrin-licredity-v2.0.fv.pdf": false,
-  "2025-09-01-cyfrin-licredity-v2.0.pdf": false,
-  "2025-09-01-cyfrin-metamask-TotalBalanceEnforcer-v2.0.pdf": true,
-  "2025-09-04-cyfrin-symbiotic-v2.1.pdf": true,
-  "2025-09-05-cyfrin-stbl-v2.0.pdf": true,
-  "2025-09-05-cyfrin-wlf-v2.1.pdf": true,
-  "2025-09-10-cyfrin-linea-tokens-v2.5.pdf": false,
-  "2025-09-25-cyfrin-button-basis-trade-v2.0.pdf": false,
-  "2025-10-01-cyfrin-sorella-l2-angstrom-v2.1.fv.pdf": false,
-  "2025-10-01-cyfrin-sorella-l2-angstrom-v2.1.pdf": false,
-  "2025-10-07-cyfrin-securitize-bridge-cctpv2-v2.0.pdf": false,
-  "2025-10-08-cyfrin-strata-tranches-v2.0.pdf": false,
-  "2025-10-10-cyfrin-securitize-dstoken-rebasing-v2.1.pdf": false,
-  "2025-10-10-cyfrin-suzaku-balancer-validator-v2.0.pdf": true,
-  "2025-10-15-cyfrin-veefriends-v2.0.pdf": false,
-  "2025-10-16-cyfrin-accountable-v2.0.fv.pdf": false,
-  "2025-10-16-cyfrin-accountable-v2.0.pdf": false,
-  "2025-10-16-cyfrin-d2-hype-corewriter-v2.0.pdf": false,
-  "2025-10-17-cyfrin-atumv2-evm-tron-v2.0.pdf": false,
-  "2025-10-21-cyfrin-illuvium-stakingv3-v2.0.pdf": false,
-  "2025-10-22-cyfrin-remora-dynamic-tokens-v2.1.pdf": false,
-  "2025-10-31-cyfrin-securitize-spltoken-whitelist-v2.0.pdf": false,
-  "2025-11-03-cyfrin-linea-burn-v2.2.pdf": false,
-  "2025-11-06-cyfrin-securitize-global-registry-v2.0.pdf": false,
-  "2025-11-07-cyfrin-securitize-dstoken-whitelist-svm-v2.0.pdf": false,
-  "2025-11-10-cyfrin-benqi-governance-v2.0.pdf": false,
-  "2025-11-23-cyfrin-sherpa-v2.0.pdf": false,
-  "2025-12-03-cyfrin-symbiotic-bls12381-v2.0.pdf": false,
-  "2025-12-03-cyfrin-symbiotic-key-registry-v2.0.pdf": true,
-  "2025-12-05-cyfrin-remora-final-v2.0.pdf": false,
-  "2025-12-15-cyfrin-deriverse-dex-fv-v2.0.pdf": false,
-  "2025-12-15-cyfrin-deriverse-dex-v2.0.pdf": false,
-  "2025-12-19-cyfrin-lido-earn-v2.0.pdf": false,
-  "2025-12-24-cyfrin-securitize-public-stock-ramp-v2.0.pdf": false,
-  "2025-12-24-cyfrin-wannabetv2-v2.0.pdf": false,
-  "2026-01-05-cyfrin-statusl2-v2.0.pdf": false,
-  "2026-01-10-cyfrin-boundary-v2.2.pdf": false,
-  "2026-01-13-cyfrin-safe-harbor-v2.0.pdf": true,
-  "2026-01-15-cyfrin-story-ip-derivative-agent-v2.1.pdf": false,
-  "2026-01-23-cyfrin-strata-shares-cooldown-v2.0.pdf": false,
-  "2026-01-27-cyfrin-majority-protocol-v2.0.pdf": false,
-  "2026-01-27-cyfrin-predict-dot-fun-FV-v2.0.pdf": false,
-  "2026-01-30-cyfrin-accountable-catchup-v2.1.pdf": false,
-  "2026-01-30-cyfrin-accountable-pr50-v2.0.pdf": false,
-  "2026-02-04-cyfrin-stakedotlink-espresso-v2.0.pdf": true,
-  "2026-02-10-cyfrin-securitize-bridge-wormhole-executor-v2.0.pdf": true,
-  "2026-02-11-cyfrin-securitize-evm-whitelister-v2.0.pdf": false,
-  "2026-02-13-cyfrin-button-update-v2.0.pdf": false,
-  "2026-02-16-cyfrin-aarc-btcy-fv-v2.0.pdf": false,
-  "2026-02-18-cyfrin-predict-fun-v2.0.pdf": false,
-  "2026-02-19-cyfrin-securitize-svm-on-off-ramp-v2.0.pdf": false,
-  "2026-02-20-cyfrin-aarc-btcy-v2.0.pdf": false,
-  "2026-03-04-cyfrin-ethcf-swapboard-v2.0.pdf": false,
-  "2026-03-04-cyfrin-parallel3.1-FV-v2.0.pdf": false,
-  "2026-03-04-cyfrin-parallel3.1-v2.0.pdf": false,
-  "2026-03-05-cyfrin-metamask-connect-v2.0.pdf": false,
-  "2026-03-09-cyfrin-firm-money-v2.0.pdf": false,
-  "2026-03-12-cyfrin-shutter-security-council-v2.0.pdf": false,
-  "2026-03-12-cyfrin-spiral-stake-v2-v2.0.pdf": false,
-  "2026-03-13-cyfrin-bridgex-fv-v2.0.pdf": false,
-  "2026-03-13-cyfrin-myriad-clob-v2.0.pdf": false,
-  "2026-03-17-cyfrin-securitize-solana-spl-acl-v2.0.pdf": false,
-  "2026-03-23-cyfrin-ens-registrar-manager-v2.0.pdf": false,
-  "2026-03-23-cyfrin-registrar-manager-FV-v2.0.pdf": false,
-  "2026-03-25-cyfrin-sablier-bob-escrow-v2.0.pdf": false,
-  "2026-03-27-cyfrin-linea-mixed-upgrade-v2.0.pdf": false,
-  "2026-03-27-cyfrin-sablier-bob-escrow-fv-v2.0.pdf": false,
-  "2026-03-30-cyfrin-securitize-bridgev2-v2.0.pdf": false,
-  "2026-03-30-cyfrin-securitize-vault-registrarv2-v2.0.pdf": false,
-  "2026-04-01-cyfrin-bridgex-v2.0.pdf": false,
-  "2026-04-02-cyfrin-atum-solana-v2-v2.0.pdf": false,
-  "2026-04-06-cyfrin-aztec-logic-module-v2.0.pdf": false,
-  "2026-04-07-cyfrin-myriad-pr145-v2.0.pdf": false,
-  "2026-04-08-cyfrin-lido-circuit-breaker-fv-v2.0.pdf": false,
-  "2026-04-08-cyfrin-myriad-realitio-oracle-v2.0.pdf": false,
-  "2026-04-20-cyfrin-metamask-veda-adapter-v2.0.pdf": true,
-  "2026-04-25-cyfrin-predict-cre-integration-v2.1.pdf": false,
-  "2026-04-30-cyfrin-securitize-solana-bridge-v2.1.pdf": false,
-  "2026-05-01-cyfrin-lido-circuit-breaker-v2.1.pdf": false,
-  "2026-05-01-cyfrin-wtao-v2.0.pdf": false,
-  "2026-05-02-cyfrin-syntetika-ccip-cct-v2.0.pdf": false,
-  "2026-05-06-cyfrin-wlfi-unlock-v2.0.pdf": true,
-  "2026-05-08-cyfrin-aztec-polynomial-v2.0.pdf": false,
-  "2026-05-12-cyfrin-molecule-onchainlab-v2.0.pdf": true,
-  "2026-05-13-cyfrin-armada-crowdfund-governance-fv-v2.0.pdf": false,
-  "2026-05-13-cyfrin-armada-crowdfund-governance-v2.0.pdf": false,
-  "2026-05-29-cyfrin-securitize-full-investor-locks-v2.0.pdf": false,
-  "2026-06-02-cyfrin-securitize-svm-whitelist-acl-support-v2.0.pdf": false,
-  "2026-06-04-cyfrin-securitize-compliance-permissionless-diff-v2.0.pdf": true,
-  "2026-06-05-cyfrin-myriad-pr151-v2.0.pdf": false,
-  "2026-06-09-cyfrin-securitize-svm-jump-router-v2.0.pdf": false,
-  "2026-06-10-cyfrin-securitize-zksync-exit-bridge-v2.0.pdf": false,
-  "2026-06-11-cyfrin-securitize-matchHandler-v2.0.pdf": true,
-  "2026-06-12-cyfrin-bebop-router-v2.0.pdf": true,
-  "2026-06-17-cyfrin-stbl-ess-v2.0.pdf": false,
-  "2026-06-18-cyfrin-linea-forced-txns-v2.0.pdf": false,
-  "2026-06-24-cyfrin-avant-requestmanagerv2-v2.0.pdf": false,
-  "2026-06-25-cyfrin-avant-requestmanagerv2-FV-v2.0.pdf": false,
-  "2026-06-30-cyfrin-accountable-pr75-v2.0.pdf": false,
-  "2026-07-30-cyfrin-securitize-svm-bridge-acl-support-v2.0.pdf": false,
-  "2026-08-20-cyfrin-linea-yield-manager-v2.1.pdf": false,
-  "2026-08-20-cyfrin-securitize-evm-async-vault-v2.0.pdf": false,
-  "2026-08-28-cyfrin-securitize-tempo-tip20-v2.0.pdf": true,
-  "2026-09-07-cyfrin-securitize-evm-dstoken-timelocks-v2.0.pdf": false,
-  "2026-09-08-cyfrin-greekfi-core-v2.0.pdf": false,
-  "2026-09-08-cyfrin-greekfi-oracle-v2.0.pdf": false,
-  "2026-09-09-cyfrin-securitize-evm-buildi-deploy-diff-v2.0.pdf": false,
-  "2026-09-11-cyfrin-securitize-evm-globaldenylist-v2.0.pdf": false,
-  "2026-09-17-cyfrin-securitize-solana-whitelister-v2.0.pdf": false,
-  "2026-09-17-cyfrin-securitize-svm-vaultregistrar-spl-acl-v2.0.pdf": false
+  "2023-03-13-beanstalk_wells_v0.1.md": null,
+  "2023-04-11-cyfrin-hyperliquid-dex-report.md": null,
+  "2023-06-01-sudoswap-report.md": null,
+  "2023-06-07-cyfrin-uniswap-v3-limit-orders.md": null,
+  "2023-06-13-cyfrin-drop-claim-report-v2.md": null,
+  "2023-06-16-cyfrin-beanstalk-wells.md": null,
+  "2023-08-25-cyfrin-stake-link.md": null,
+  "2023-08-26-cyfrin-dolomite-margin.md": [
+    "---",
+    "0kage",
+    "alex roan",
+    "carlos",
+    "giovanni di siena",
+    "hans"
+  ],
+  "2023-09-06-cyfrin-woosh.md": [
+    "---",
+    "0kage",
+    "hans"
+  ],
+  "2023-09-12-cyfrin-beanstalk.md": [
+    "---",
+    "alex roan",
+    "carlos amarante",
+    "giovanni di siena"
+  ],
+  "2023-09-19-cyfrin-stakepet.md": [
+    "---",
+    "0kage",
+    "hans"
+  ],
+  "2023-09-19-cyfrin-swapexchange.md": [
+    "---",
+    "0kage",
+    "hans"
+  ],
+  "2023-10-13-cyfrin-beanstalk-bip-38.md": [
+    "---",
+    "carlos amarante",
+    "giovanni di siena"
+  ],
+  "2023-11-03-cyfrin-streamr-v2.0.md": [
+    "---",
+    "hans"
+  ],
+  "2023-11-05-cyfrin-farcaster-v1.0.md": [
+    "---",
+    "hans"
+  ],
+  "2023-11-10-cyfrin-dexe.md": [
+    "---",
+    "0kage",
+    "dacian"
+  ],
+  "2023-11-20-cyfrin-mode-earnm.md": [
+    "---",
+    "0kage",
+    "dacian"
+  ],
+  "2024-01-10-cyfrin-wormhole-thermae.md": [
+    "---",
+    "0kage",
+    "dacian"
+  ],
+  "2024-01-24-cyfrin-solidlyV3.md": [
+    "---",
+    "carlitox477",
+    "dacian"
+  ],
+  "2024-02-23-cyfrin-swell-barracuda.md": [
+    "---",
+    "carlitox477",
+    "dacian"
+  ],
+  "2024-04-06-cyfrin-beefy-finance.md": [
+    "---",
+    "carlitox477",
+    "dacian"
+  ],
+  "2024-04-09-cyfrin-wormhole-evm-cctp-v2-1.md": [
+    "---",
+    "0kage",
+    "giovanni di siena",
+    "hans"
+  ],
+  "2024-04-11-cyfrin-wormhole-evm-ntt-v2.md": [
+    "---",
+    "0kage",
+    "giovanni di siena",
+    "hans"
+  ],
+  "2024-04-14-cyfrin-goldilocks-v1.1.md": [
+    "---",
+    "hans"
+  ],
+  "2024-04-18-cyfrin-ondo-finance.md": [
+    "---",
+    "dacian"
+  ],
+  "2024-05-02-cyfrin-beanstalk-bip-39-v1-2.md": [
+    "---",
+    "carlos amarante",
+    "dacian",
+    "giovanni di siena"
+  ],
+  "2024-05-04-cyfrin-solidly-v2-memecore-v2-2.md": [
+    "---",
+    "giovanni di siena",
+    "hans"
+  ],
+  "2024-05-24-cyfrin-linea.md": [
+    "---",
+    "dacian"
+  ],
+  "2024-06-17-cyfrin-templedao-v2.1.md": [
+    "---",
+    "hans"
+  ],
+  "2024-07-01-cyfrin-tunnl-v2.0.md": [
+    "---",
+    "hans"
+  ],
+  "2024-07-10-cyfrin-casimir-v2.0.md": [
+    "---",
+    "0kage",
+    "hans"
+  ],
+  "2024-07-13-cyfrin-zaros-v2.0.md": [
+    "---",
+    "dacian"
+  ],
+  "2024-07-18-cyfrin-securitize-redemptions-v2.0.md": [
+    "---",
+    "hans"
+  ],
+  "2024-07-23-cyfrin-wormhole-NTT-Diff-v1.0.md": [
+    "---",
+    "0kage",
+    "giovanni di siena",
+    "hans"
+  ],
+  "2024-08-10-cyfrin-securitize-vault-v1-v2.0.md": [
+    "---",
+    "hans"
+  ],
+  "2024-08-15-cyfrin-earnm-dropbox-v2.0.md": [
+    "---",
+    "dacian"
+  ],
+  "2024-08-21-cyfrin-chaos-labs-risk-oracle-v2.0.md": [
+    "---",
+    "giovanni di siena"
+  ],
+  "2024-09-13-cyfrin-the-standard-smart-vault-v2.0.md": [
+    "---",
+    "giovanni di siena",
+    "immeas"
+  ],
+  "2024-09-17-cyfrin-stake-link-v2.0.md": [
+    "---",
+    "0kage",
+    "hans"
+  ],
+  "2024-09-27-cyfrin-bima-v2.0.md": [
+    "---",
+    "dacian"
+  ],
+  "2024-10-04-cyfrin-wormhole-multigov-v2.0.md": [
+    "---",
+    "0kage",
+    "hans"
+  ],
+  "2024-10-28-cyfrin-securitize-bridge-v2.0.md": [
+    "---",
+    "hans"
+  ],
+  "2024-10-29-cyfrin-one-world-project-v2.0.md": [
+    "---",
+    "gio",
+    "immeas"
+  ],
+  "2024-11-18-cyfrin-stake.link-metis-staking-v2.0.md": [
+    "---",
+    "0kage",
+    "hans"
+  ],
+  "2024-11-26-cyfrin-m0-v2.0.md": [
+    "---",
+    "0kage",
+    "immeas"
+  ],
+  "2024-12-11-cyfrin-benqi-ignite-v2.0.md": [
+    "---",
+    "giovanni di siena",
+    "immeas"
+  ],
+  "2024-12-17-cyfrin-quantamm-v1.2.md": [
+    "---",
+    "0kage",
+    "immeas"
+  ],
+  "2024-12-17-cyfrin-securitize-redeem-swap-vault-nav-v2.0.md": [
+    "---",
+    "hans"
+  ],
+  "2024-12-18-cyfrin-the-standard-auto-redemption-v2.0.md": [
+    "giovanni di siena"
+  ],
+  "2024-12-23-cyfrin-soneium-shibuya-v2.0.md": [
+    "---",
+    "hans"
+  ],
+  "2025-01-06-cyfrin-linea-v2.2.md": [
+    "---",
+    "dacian"
+  ],
+  "2025-01-10-cyfrin-securitize-dstokenswap-v2.0.md": [
+    "---",
+    "hans"
+  ],
+  "2025-01-20-cyfrin-stakedotlink-stakingproxy-v2.0.md": [
+    "---",
+    "0kage"
+  ],
+  "2025-02-24-cyfrin-d2-v2.1.md": [
+    "---",
+    "immeas"
+  ],
+  "2025-02-28-cyfrin-stakedotlink-v2.0.md": [
+    "---",
+    "alex roan",
+    "giovanni di siena",
+    "immeas"
+  ],
+  "2025-03-10-cyfrin-pancakeswap-v3.0.md": [
+    "---",
+    "0kage",
+    "hans"
+  ],
+  "2025-03-12-cyfrin-paladin-valkyrie-v2.0.md": [
+    "---",
+    "draiakoo",
+    "giovanni di siena"
+  ],
+  "2025-03-18-cyfrin-Metamask-DelegationFramework1-v2.0.md": [
+    "---",
+    "0kage",
+    "al-qaqa"
+  ],
+  "2025-03-19-cyfrin-linea-spingame-v2.0.md": [
+    "---",
+    "alex roan",
+    "farouk",
+    "giovanni di siena",
+    "immeas"
+  ],
+  "2025-03-28-cyfrin-rocko-refinance-v2.0.md": [
+    "---",
+    "dacian",
+    "hans"
+  ],
+  "2025-04-01-cyfrin-Metamask-DelegationFramework2-v2.0.md": [
+    "---",
+    "0kage",
+    "draiakoo"
+  ],
+  "2025-04-06-cyfrin-benqi-collateral-migrator-v2.0.md": [
+    "---",
+    "immeas"
+  ],
+  "2025-04-09-cyfrin-matrixdock-v2.0.md": [
+    "---",
+    "dacian",
+    "hans"
+  ],
+  "2025-04-24-cyfrin-cryptoart-v2.0.md": [
+    "---",
+    "dacian",
+    "hans"
+  ],
+  "2025-04-24-cyfrin-dolomite-POLVaults-v2.0.md": [
+    "---",
+    "0kage",
+    "farouk"
+  ],
+  "2025-04-24-cyfrin-yieldfi-v2.0.md": [
+    "---",
+    "immeas",
+    "jorge"
+  ],
+  "2025-05-01-cyfrin-metamask-delegationFramework-part3-v2.0.md": [
+    "---",
+    "0kage"
+  ],
+  "2025-05-07-cyfrin-metamask-delegationFramework-part4-v2.0.md": [
+    "---",
+    "0kage"
+  ],
+  "2025-05-08-cyfrin-gas-aave3.3-v1.0.md": [
+    "---",
+    "dacian"
+  ],
+  "2025-05-16-cyfrin-ethena-timelock-v2.0.md": [
+    "---",
+    "alex roan",
+    "dacian",
+    "giovanni di siena",
+    "hans"
+  ],
+  "2025-05-19-cyfrin-stakedotlink-polygon-staking-v2.0.md": [
+    "---",
+    "0kage",
+    "holydevoti0n"
+  ],
+  "2025-05-23-cyfrin-securitize-solana-vault-v2.0.md": [
+    "---",
+    "al-qa-qa",
+    "alex roan",
+    "farouk",
+    "giovanni di siena"
+  ],
+  "2025-06-02-cyfrin-evo-soulboundtoken-v2.0.md": [
+    "---",
+    "dacian",
+    "giovanni di siena"
+  ],
+  "2025-06-04-cyfrin-stakelink-pr152-linkmigrator-v2.0.md": [
+    "---",
+    "holydevoti0n",
+    "immeas"
+  ],
+  "2025-06-06-cyfrin-eulerswap-v2.1.md": [
+    "---",
+    "0x539",
+    "bladesec",
+    "chaindefenders",
+    "immeas",
+    "petersr"
+  ],
+  "2025-06-11-cyfrin-strata-predeposit-v2.1.md": [
+    "---",
+    "dacian",
+    "giovanni di siena"
+  ],
+  "2025-06-17-cyfrin-yieldfi-pr19-vytoken-v2.2.md": [
+    "---",
+    "alex roan",
+    "giovanni di siena",
+    "immeas"
+  ],
+  "2025-06-30-cyfrin-linea-spingame-v2-v2.1.md": [
+    "---",
+    "hans",
+    "immeas"
+  ],
+  "2025-07-04-cyfrin-remora-pledge-v2.0.md": [
+    "---",
+    "dacian",
+    "stalin"
+  ],
+  "2025-07-07-cyfrin-suzaku-core-v2.0.md": [
+    "---",
+    "0kage",
+    "@1337web3",
+    "@petersrweb3",
+    "farouk"
+  ],
+  "2025-07-14-cyfrin-ondo-global-markets-v2.0.md": [
+    "---",
+    "al-qa'qa'",
+    "immeas"
+  ],
+  "2025-07-15-cyfrin-vii-v2.0.md": [
+    "---",
+    "giovanni di siena",
+    "stalin"
+  ],
+  "2025-07-17-cyfrin-pecunity-v2.0.md": [
+    "---",
+    "farouk",
+    "giovanni di siena"
+  ],
+  "2025-07-19-cyfrin-bunni-fee-override-hooklet-v2.0.md": [
+    "---",
+    "giovanni di siena",
+    "pontifex"
+  ],
+  "2025-07-22-cyfrin-doryoku-v2.0.md": [
+    "---",
+    "farouk",
+    "kose"
+  ],
+  "2025-07-23-cyfrin-securitize-onofframp-bridge-v2.1.md": [
+    "---",
+    "1337web3",
+    "hans",
+    "petersrweb3"
+  ],
+  "2025-07-25-cyfrin-myriad-v2.0.md": [
+    "---",
+    "chinmay",
+    "immeas",
+    "inallhonesty"
+  ],
+  "2025-08-01-cyfrin-syntetika-v2.0.md": [
+    "---",
+    "dacian",
+    "jorge"
+  ],
+  "2025-08-02-cyfrin-stakelink-vesting-v2.0.md": [
+    "---",
+    "immeas",
+    "inallhonesty"
+  ],
+  "2025-08-04-cyfrin-securitize-vaultv2-rwasegwrap-v2.2.md": [
+    "---",
+    "hans",
+    "rodion"
+  ],
+  "2025-08-14-cyfrin-atum-evm-contracts-v2.0.md": [
+    "---",
+    "dacian",
+    "jorge"
+  ],
+  "2025-08-27-cyfrin-atum-tron-contracts-v2.1.md": [
+    "---",
+    "al-qaqa",
+    "dacian"
+  ],
+  "2025-08-28-cyfrin-avant-max-v2.0.md": [
+    "---",
+    "dacian",
+    "jorge"
+  ],
+  "2025-08-29-cyfrin-atum-solana-v2.0.md": [
+    "---",
+    "al-qa'qa'",
+    "alex roan",
+    "farouk",
+    "giovanni di siena"
+  ],
+  "2025-08-29-cyfrin-securitize-solana-redemption-v2.0.md": [
+    "---",
+    "alex roan",
+    "farouk",
+    "giovanni di siena",
+    "naman"
+  ],
+  "2025-09-01-cyfrin-licredity-v2.0.md": [
+    "---",
+    "0x539",
+    "alexzoid",
+    "chaindefenders",
+    "immeas",
+    "petersr"
+  ],
+  "2025-09-01-cyfrin-metamask-TotalBalanceEnforcer-v2.0.md": [
+    "---",
+    "0kage",
+    "chinmay farkya"
+  ],
+  "2025-09-04-cyfrin-symbiotic-v2.0.md": [
+    "---",
+    "0kage",
+    "@1337web3",
+    "@petersrweb3",
+    "aleph-v",
+    "chaindefenders",
+    "farouk"
+  ],
+  "2025-09-05-cyfrin-stbl-v2.0.md": [
+    "---",
+    "0kage",
+    "stalin"
+  ],
+  "2025-09-05-cyfrin-wlf-v2.1.md": [
+    "---",
+    "0kage",
+    "chinmay farkya"
+  ],
+  "2025-09-10-cyfrin-linea-tokens-v2.5.md": [
+    "---",
+    "chinmay",
+    "immeas"
+  ],
+  "2025-09-25-cyfrin-button-basis-trade-v2.0.md": [
+    "---",
+    "0x539",
+    "chaindefenders",
+    "immeas",
+    "petersr"
+  ],
+  "2025-10-01-cyfrin-sorella-l2-angstrom-v2.1.md": [
+    "---",
+    "100proof",
+    "alexzoid",
+    "giovanni di siena"
+  ],
+  "2025-10-07-cyfrin-securitize-bridge-cctpv2-v2.0.md": [
+    "---",
+    "dacian",
+    "mrpotatomagic"
+  ],
+  "2025-10-08-cyfrin-strata-tranches-v2.0.md": [
+    "---",
+    "arno",
+    "inallhonesty",
+    "stalin"
+  ],
+  "2025-10-10-cyfrin-securitize-dstoken-rebasing-v2.1.md": [
+    "---",
+    "dacian",
+    "jorge",
+    "stalin"
+  ],
+  "2025-10-10-cyfrin-suzaku-balancer-validator-v2.0.md": [
+    "---",
+    "kage",
+    "zark"
+  ],
+  "2025-10-15-cyfrin-veefriends-v2.0.md": [
+    "---",
+    "blckhv",
+    "giovanni di siena",
+    "slavcheww"
+  ],
+  "2025-10-16-cyfrin-accountable-v2.0.md": [
+    "---",
+    "alexzoid",
+    "chinmay",
+    "immeas"
+  ],
+  "2025-10-16-cyfrin-d2-hype-corewriter-v2.0.md": [
+    "---",
+    "immeas",
+    "mrpotatomagic"
+  ],
+  "2025-10-17-cyfrin-atumv2-evm-tron-v2.0.md": [
+    "---",
+    "dacian",
+    "jorge"
+  ],
+  "2025-10-21-cyfrin-illuvium-stakingv3-v2.0.md": [
+    "---",
+    "0x539",
+    "chaindefenders",
+    "immeas",
+    "petersr"
+  ],
+  "2025-10-22-cyfrin-remora-dynamic-tokens-v2.1.md": [
+    "---",
+    "0xstalin",
+    "100proof"
+  ],
+  "2025-11-03-cyfrin-linea-burn-v2.2.md": [
+    "---",
+    "0xstalin",
+    "mrpotatomagic"
+  ],
+  "2025-11-06-cyfrin-securitize-global-registry-v2.0.md": [
+    "---",
+    "dacian",
+    "jorge"
+  ],
+  "2025-11-07-cyfrin-securitize-dstoken-whitelist-svm-v2.0.md": [
+    "---",
+    "dadekuma",
+    "naman"
+  ],
+  "2025-11-10-cyfrin-benqi-governance-v2.0.md": [
+    "---",
+    "0x539",
+    "chaindefenders",
+    "giovanni di siena",
+    "jorge",
+    "petersr"
+  ],
+  "2025-11-23-cyfrin-sherpa-v2.0.md": [
+    "---",
+    "immeas",
+    "mrpotatomagic"
+  ],
+  "2025-12-03-cyfrin-symbiotic-bls12381-v2.0.md": [
+    "---",
+    "alex roan",
+    "farouk",
+    "giovanni di siena",
+    "qpzm"
+  ],
+  "2025-12-03-cyfrin-symbiotic-key-registry-v2.0.md": [
+    "---",
+    "0kage",
+    "alex roan",
+    "farouk",
+    "giovanni di siena"
+  ],
+  "2025-12-05-cyfrin-remora-final-v2.0.md": [
+    "---",
+    "0xstalin"
+  ],
+  "2025-12-15-cyfrin-deriverse-dex-v2.0.md": [
+    "---",
+    "alexzoid",
+    "ctrus",
+    "jesjupyter",
+    "rajkumar"
+  ],
+  "2025-12-19-cyfrin-lido-earn-v2.0.md": [
+    "---",
+    "immeas",
+    "stalin"
+  ],
+  "2025-12-24-cyfrin-securitize-public-stock-ramp-v2.0.md": [
+    "---",
+    "0ximmeas",
+    "dacian",
+    "jorge",
+    "stalin"
+  ],
+  "2025-12-24-cyfrin-wannabetv2-v2.0.md": [
+    "---",
+    "dacian",
+    "immeas"
+  ],
+  "2026-01-05-cyfrin-statusl2-v2.0.md": [
+    "---",
+    "farouk",
+    "samuraii77",
+    "t1moh"
+  ],
+  "2026-01-10-cyfrin-boundary-v2.2.md": [
+    "---",
+    "bengalcatbalu",
+    "immeas"
+  ],
+  "2026-01-13-cyfrin-safe-harbor-v2.0.md": [
+    "---",
+    "farouk",
+    "kage"
+  ],
+  "2026-01-15-cyfrin-story-ip-derivative-agent-v2.1.md": [
+    "---",
+    "immeas",
+    "jesjupyter"
+  ],
+  "2026-01-23-cyfrin-strata-shares-cooldown-v2.0.md": [
+    "---",
+    "0xstalin",
+    "bengalcatbalu"
+  ],
+  "2026-01-27-cyfrin-majority-protocol-v2.0.md": [
+    "---",
+    "dacian",
+    "jorge"
+  ],
+  "2026-01-30-cyfrin-accountable-catchup-v2.1.md": [
+    "---",
+    "immeas",
+    "mrpotatomagic"
+  ],
+  "2026-01-30-cyfrin-accountable-pr50-v2.0.md": [
+    "---",
+    "immeas",
+    "mrpotatomagic"
+  ],
+  "2026-02-04-cyfrin-stakedotlink-espresso-v2.0.md": [
+    "---",
+    "al qa-qa",
+    "kage"
+  ],
+  "2026-02-10-cyfrin-securitize-bridge-wormhole-executor-v2.0.md": [
+    "---",
+    "kage",
+    "mrpotatomagic"
+  ],
+  "2026-02-11-cyfrin-securitize-evm-whitelister-v2.0.md": [
+    "---",
+    "dacian",
+    "stalin"
+  ],
+  "2026-02-12-cyfrin-linea-yield-manager-v2.0.md": [
+    "---",
+    "1337web3",
+    "chaindefenders",
+    "dacian",
+    "petersrweb3",
+    "stalin"
+  ],
+  "2026-02-13-cyfrin-button-update-v2.0.md": [
+    "---",
+    "bengalcatbalu",
+    "immeas"
+  ],
+  "2026-02-18-cyfrin-predict-fun-v2.0.md": [
+    "---",
+    "alexzoid",
+    "farouk",
+    "qpzm"
+  ],
+  "2026-02-19-cyfrin-securitize-svm-on-off-ramp-v2.0.md": [
+    "---",
+    "ctrus",
+    "farouk",
+    "jesjupyter"
+  ],
+  "2026-02-20-cyfrin-aarc-btcy-v2.0.md": [
+    "---",
+    "dacian",
+    "viktor"
+  ],
+  "2026-03-04-cyfrin-ethcf-swapboard-v2.0.md": [
+    "---",
+    "dacian",
+    "fresco",
+    "ironside",
+    "qpzm"
+  ],
+  "2026-03-04-cyfrin-parallel3.1-v2.0.md": [
+    "---",
+    "0xstalin",
+    "100proof",
+    "alexzoid",
+    "alix40",
+    "t1moh"
+  ],
+  "2026-03-05-cyfrin-metamask-connect-v2.0.md": [
+    "---",
+    "0xaudron",
+    "raiders"
+  ],
+  "2026-03-09-cyfrin-firm-money-v2.0.md": [
+    "---",
+    "arnie",
+    "blckhv",
+    "sbsecurity",
+    "slavcheww"
+  ],
+  "2026-03-12-cyfrin-shutter-security-council-v2.0.md": [
+    "---",
+    "blckhv",
+    "slavcheww",
+    "stalin"
+  ],
+  "2026-03-12-cyfrin-spiral-stake-v2-v2.0.md": [
+    "---",
+    "carrotsmuggler",
+    "mrpotatomagic"
+  ],
+  "2026-03-13-cyfrin-bridgex-v2.0.md": [
+    "---",
+    "dacian",
+    "jorge"
+  ],
+  "2026-03-13-cyfrin-myriad-clob-v2.0.md": [
+    "---",
+    "immeas",
+    "kiki"
+  ],
+  "2026-03-17-cyfrin-securitize-solana-spl-acl-v2.0.md": [
+    "---",
+    "ctrus",
+    "farouk",
+    "jesjupyter"
+  ],
+  "2026-03-23-cyfrin-ens-registrar-manager-v2.0.md": [
+    "---",
+    "blckhv",
+    "slavcheww",
+    "stalin"
+  ],
+  "2026-03-25-cyfrin-sablier-bob-escrow-v2.0.md": [
+    "---",
+    "dacian",
+    "mrpotatomagic"
+  ],
+  "2026-03-27-cyfrin-linea-mixed-upgrade-v2.0.md": [
+    "---",
+    "dacian",
+    "stalin"
+  ],
+  "2026-03-30-cyfrin-securitize-bridgev2-v2.0.md": [
+    "---",
+    "alix40",
+    "stalin"
+  ],
+  "2026-03-30-cyfrin-securitize-vault-registrarv2-v2.0.md": [
+    "---",
+    "alix40",
+    "stalin"
+  ],
+  "2026-04-02-cyfrin-atum-solana-v2-v2.0.md": [
+    "---",
+    "ctrus",
+    "farouk",
+    "jesjupyter"
+  ],
+  "2026-04-06-cyfrin-aztec-logic-module-v2.0.md": [
+    "---",
+    "farouk",
+    "qpzm"
+  ],
+  "2026-04-07-cyfrin-myriad-pr145-v2.0.md": [
+    "---",
+    "immeas"
+  ],
+  "2026-04-08-cyfrin-lido-circuit-breaker-v2.0.md": [
+    "---",
+    "blckhv",
+    "dacian",
+    "sbsecurity",
+    "slavcheww"
+  ],
+  "2026-04-08-cyfrin-myriad-realitio-oracle-v2.0.md": [
+    "---",
+    "immeas",
+    "kiki"
+  ],
+  "2026-04-20-cyfrin-metamask-veda-adapter-v2.0.md": [
+    "---",
+    "immeas",
+    "kage"
+  ],
+  "2026-04-25-cyfrin-predict-cre-integration-v2.1.md": [
+    "---",
+    "jorge",
+    "raiders"
+  ],
+  "2026-04-30-cyfrin-securitize-solana-bridge-v2.1.md": [
+    "---",
+    "farouk",
+    "jesjupyter"
+  ],
+  "2026-05-01-cyfrin-wtao-v2.0.md": [
+    "---",
+    "farouk",
+    "immeas"
+  ],
+  "2026-05-02-cyfrin-syntetika-ccip-cct-v2.0.md": [
+    "---",
+    "immeas",
+    "mrpotatomagic"
+  ],
+  "2026-05-06-cyfrin-wlfi-unlock-v2.0.md": [
+    "---",
+    "blckhv",
+    "kage",
+    "sbsecurity",
+    "slavcheww"
+  ],
+  "2026-05-08-cyfrin-aztec-polynomial-v2.0.md": [
+    "---",
+    "farouk",
+    "qpzm"
+  ],
+  "2026-05-12-cyfrin-molecule-onchainlab-v2.0.md": [
+    "---",
+    "al-qaqa",
+    "kage"
+  ],
+  "2026-05-13-cyfrin-armada-crowdfund-governance-v2.0.md": [
+    "---",
+    "arion",
+    "dacian",
+    "t1moh"
+  ],
+  "2026-05-29-cyfrin-securitize-full-investor-locks-v2.0.md": [
+    "---",
+    "farouk",
+    "immeas"
+  ],
+  "2026-06-02-cyfrin-securitize-svm-whitelist-acl-support-v2.0.md": [
+    "---",
+    "al-qaqa",
+    "farouk"
+  ],
+  "2026-06-04-cyfrin-securitize-compliance-permissionless-diff-v2.0.md": [
+    "---",
+    "blckhv",
+    "kage",
+    "sbsecurity",
+    "slavcheww"
+  ],
+  "2026-06-05-cyfrin-myriad-pr151-v2.0.md": [
+    "---",
+    "immeas",
+    "kiki"
+  ],
+  "2026-06-09-cyfrin-securitize-svm-jump-router-v2.0.md": [
+    "---",
+    "ctrus",
+    "farouk",
+    "jesjupyter"
+  ],
+  "2026-06-10-cyfrin-securitize-zksync-exit-bridge-v2.0.md": [
+    "---",
+    "dacian",
+    "immeas"
+  ],
+  "2026-06-11-cyfrin-securitize-matchHandler-v2.0.md": [
+    "---",
+    "immeas",
+    "kage"
+  ],
+  "2026-06-12-cyfrin-bebop-router-v2.0.md": [
+    "---",
+    "blckhv",
+    "kage",
+    "sbsecurity",
+    "slavcheww"
+  ],
+  "2026-06-17-cyfrin-stbl-ess-v2.0.md": [
+    "---",
+    "alix40",
+    "stalin"
+  ],
+  "2026-06-18-cyfrin-linea-forced-txns-v2.0.md": [
+    "---",
+    "dacian",
+    "stalin"
+  ],
+  "2026-06-24-cyfrin-avant-requestmanagerv2-v2.0.md": [
+    "---",
+    "dacian",
+    "juliusraynaldi"
+  ],
+  "2026-06-26-cyfrin-securitize-svm-bridge-acl-support-v2.0.md": [
+    "---",
+    "ctrus",
+    "jesjupyter"
+  ],
+  "2026-06-30-cyfrin-accountable-pr75-v2.0.md": [
+    "---",
+    "alix40",
+    "immeas"
+  ],
+  "2026-08-05-cyfrin-securitize-evm-async-vault-v2.0.md": [
+    "---",
+    "infinitesec",
+    "rvierdiiev"
+  ],
+  "2026-08-28-cyfrin-securitize-tempo-tip20-v2.0.md": [
+    "---",
+    "immeas",
+    "kage"
+  ],
+  "2026-09-07-cyfrin-securitize-evm-dstoken-timelocks-v2.0.md": [
+    "---",
+    "alix40",
+    "dacian"
+  ],
+  "2026-09-08-cyfrin-greekfi-core-v2.0.md": [
+    "---",
+    "alix40",
+    "immeas"
+  ],
+  "2026-09-08-cyfrin-greekfi-oracle-v2.0.md": [
+    "---",
+    "alix40",
+    "immeas"
+  ],
+  "2026-09-11-cyfrin-securitize-evm-globaldenylist-v2.0.md": [
+    "---",
+    "blckhv",
+    "dacian",
+    "sbsecurity",
+    "slavcheww"
+  ],
+  "2026-09-17-cyfrin-securitize-solana-whitelister-v2.0.md": [
+    "---",
+    "ctrus",
+    "farouk",
+    "jesjupyter"
+  ],
+  "2026-09-17-cyfrin-securitize-svm-vaultregistrar-spl-acl-v2.0.md": [
+    "---",
+    "ctrus",
+    "jesjupyter",
+    "nate"
+  ]
 }

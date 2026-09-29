@@ -4,23 +4,25 @@ Build the GitHub profile README from:
 
   1. Cyfrin public audit reports (https://github.com/Cyfrin/cyfrin-audit-reports)
      - the main README table gives audit dates, protocol name, Tech (category) and PDF link
-     - each PDF's first pages are scanned for the auditor name (Kage / 0kage / Kage Alexander)
-     - scan results are cached in data/cyfrin_scan_cache.json so only new PDFs are downloaded
-  2. data/private_audits.json   - REDACTED (private) audits, referenced by README row
-  3. data/risk_reports.json     - risk reports
-  4. data/governance.json       - governance forum responses
-  5. data/articles.json         - blogs / articles
+     - each report's markdown in reports_md/ lists the Lead / Assisting Auditors; a report is
+       mine if Kage / 0kage / Kage Alexander appears there
+     - parsed auditor lists are cached in data/cyfrin_scan_cache.json so only new reports are fetched
+  2. data/audit_overrides.json  - public reports to force-include (old reports whose markdown
+                                  has no auditor block)
+  3. data/private_audits.json   - REDACTED (private) audits, referenced by README row
+  4. data/risk_reports.json     - risk reports
+  5. data/governance.json       - governance forum responses
+  6. data/articles.json         - blogs / articles
 
 Usage:
   python3 scripts/build_profile.py                 # rebuild README.md
   python3 scripts/build_profile.py --list-redacted # show REDACTED rows to pick from
   python3 scripts/build_profile.py --commit --push # rebuild, commit and push
 
-Requires: pypdf  (pip install -r requirements.txt)
+Standard library only.
 """
 
 import argparse
-import io
 import json
 import os
 import re
@@ -31,7 +33,6 @@ from datetime import date
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(ROOT, "data")
-CACHE_DIR = os.path.join(ROOT, ".cache", "reports")
 SCAN_CACHE = os.path.join(DATA_DIR, "cyfrin_scan_cache.json")
 TEMPLATE = os.path.join(ROOT, "README.template.md")
 OUTPUT = os.path.join(ROOT, "README.md")
@@ -39,14 +40,14 @@ OUTPUT = os.path.join(ROOT, "README.md")
 CYFRIN_REPO = "Cyfrin/cyfrin-audit-reports"
 CYFRIN_BRANCH = "main"
 RAW_BASE = f"https://raw.githubusercontent.com/{CYFRIN_REPO}/{CYFRIN_BRANCH}"
+API_MD_LIST = f"https://api.github.com/repos/{CYFRIN_REPO}/contents/reports_md?ref={CYFRIN_BRANCH}"
 BLOB_BASE = f"https://github.com/{CYFRIN_REPO}/blob/{CYFRIN_BRANCH}"
 
-# Name variants that identify me on a report's auditor page.
-AUDITOR_PATTERNS = [r"0kage", r"kage\s+alexander", r"\bkage\b"]
-AUDITOR_RE = re.compile("|".join(AUDITOR_PATTERNS), re.IGNORECASE)
-PAGES_TO_SCAN = 5  # auditor names are on the cover / first pages
+# Name variants that identify me in a report's auditor block (lowercase).
+MY_IDS = {"kage", "0kage", "kage alexander"}
 
 PDF_LINK_RE = re.compile(r"\[([^\]]+)\]\((\./reports/[^)]+\.pdf)\)")
+MD_LINK_RE = re.compile(r"\[([^\]]+)\]\(([^)]*)\)")
 DATE_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})")
 
 
@@ -115,52 +116,94 @@ def parse_cyfrin_readme(content):
 
 
 # --------------------------------------------------------------------------- #
-# PDF scanning
+# reports_md auditor parsing
 # --------------------------------------------------------------------------- #
-def pdf_mentions_me(filename):
-    from pypdf import PdfReader  # imported lazily so --list-redacted works without it
+def norm_stem(filename):
+    """Version-insensitive join key for a report filename: drop the extension,
+    lowercase, strip a trailing -vN.N and any formal-verification marker."""
+    s = re.sub(r"\.(md|pdf)$", "", filename).lower()
+    s = re.sub(r"\.fv$", "", s)
+    s = re.sub(r"-fv(?=(-v[\d.]+)?$)", "", s)
+    s = re.sub(r"-v\d[\d.]*$", "", s)
+    return s
 
-    local = os.path.join(CACHE_DIR, filename)
-    if not os.path.exists(local):
-        log(f"  downloading {filename}")
-        os.makedirs(CACHE_DIR, exist_ok=True)
-        data = fetch(f"{RAW_BASE}/reports/{filename}", binary=True)
-        with open(local, "wb") as f:
-            f.write(data)
-    try:
-        reader = PdfReader(local)
-        text = "\n".join((p.extract_text() or "") for p in reader.pages[:PAGES_TO_SCAN])
-    except Exception as exc:  # corrupt / unreadable pdf
-        log(f"  WARNING could not read {filename}: {exc}")
+
+def dateless(stem):
+    return re.sub(r"^\d{4}-\d{2}-\d{2}-", "", stem)
+
+
+def list_md_files():
+    listing = json.loads(fetch(API_MD_LIST))
+    return sorted(e["name"] for e in listing if e["name"].endswith(".md"))
+
+
+def md_for_pdf(pdf_filename, by_stem, by_slug):
+    """Find the markdown file(s) for a README PDF link. Exact (date + slug)
+    stem first; the README PDF and its markdown occasionally carry different
+    dates, so fall back to the slug alone when that is unambiguous."""
+    stem = norm_stem(pdf_filename)
+    if stem in by_stem:
+        return by_stem[stem]
+    return by_slug.get(dateless(stem), []) if len(by_slug.get(dateless(stem), [])) == 1 else []
+
+
+def parse_auditors(md_text):
+    """Lowercase auditor identifiers from the Lead / Assisting Auditors block.
+    Returns None when the markdown has no auditor block (a few 2023 reports)."""
+    lines = md_text.splitlines()
+    start = next((i for i, l in enumerate(lines) if "**Lead Auditors**" in l), None)
+    if start is None:
         return None
-    return bool(AUDITOR_RE.search(text))
+    ids = set()
+    for line in lines[start:]:
+        if line.lstrip().startswith("# Findings"):
+            break
+        stripped = line.strip()
+        if not stripped or "Auditors**" in stripped:
+            continue
+        links = MD_LINK_RE.findall(stripped)
+        if links:
+            ids |= {t.strip().lower() for t, url in links if not url.startswith("#")}
+        else:
+            ids.add(stripped.lower())  # plain-text name without a link
+    return sorted(ids)
 
 
 def scan_reports(rows):
-    """Return {pdf filename: bool} for every PDF linked in the README."""
+    """Return {pdf filename: [auditor ids]} for every PDF linked in the README,
+    fetching only markdown files not yet in the cache."""
     cache = load_json(SCAN_CACHE, {})
+    md_files = list_md_files()
+    by_stem, by_slug = {}, {}
+    for name in md_files:
+        by_stem.setdefault(norm_stem(name), []).append(name)
+        by_slug.setdefault(dateless(norm_stem(name)), []).append(name)
+
     changed = False
+    result = {}
     for row in rows:
-        for _, filename in row["links"]:
-            if filename in cache:
-                continue
-            result = pdf_mentions_me(filename)
-            if result is None:
-                continue
-            cache[filename] = result
-            changed = True
+        for _, pdf in row["links"]:
+            ids = set()
+            for md in md_for_pdf(pdf, by_stem, by_slug):
+                if md not in cache:
+                    log(f"  fetching {md}")
+                    cache[md] = parse_auditors(fetch(f"{RAW_BASE}/reports_md/{md}"))
+                    changed = True
+                ids |= set(cache[md] or [])
+            result[pdf] = sorted(ids)
     if changed:
         save_json(SCAN_CACHE, cache)
-    return cache
+    return result
 
 
 # --------------------------------------------------------------------------- #
 # build audit entries
 # --------------------------------------------------------------------------- #
 def public_audit_entries(rows, scan):
+    overrides = {o["pdf"] for o in load_json(os.path.join(DATA_DIR, "audit_overrides.json"), [])}
     entries = []
     for row in rows:
-        matched = [(t, f) for t, f in row["links"] if scan.get(f)]
+        matched = [(t, f) for t, f in row["links"] if MY_IDS & set(scan.get(f, [])) or f in overrides]
         if not matched:
             continue
         names = [re.sub(r"\s*\(\\?\*\)\s*", "", t).strip().lstrip("[") for t, _ in matched]
@@ -267,7 +310,7 @@ def main():
               '{"audit_start": "...", "label": "REDACTED ..."}')
         return
 
-    log("Scanning report PDFs for auditor name ...")
+    log("Reading auditor blocks from reports_md ...")
     scan = scan_reports(rows)
     public = public_audit_entries(rows, scan)
     private = private_audit_entries(rows)
