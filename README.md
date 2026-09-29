@@ -6,17 +6,17 @@
 -->
 
 # About Me
-- 👋 Hi, I'm @0kage-eth... a blockchain security engineer, defi builder, whitehat, analyst and MEV searcher. I believe in capital markets, hard money, sovereignty and frictionless exchange of capital, ideas and culture - that is what draws me to crypto, defi and blockchain technologies. I believe in playing long term positive sum games.
-- 🔐 I'm a security researcher and private auditor at [Cyfrin](https://www.cyfrin.io/)
-- 👀 I'm interested in... blockchain security, defi, derivatives, MEV & arb opportunities.
-- I am continuously learning by analyzing protocol smart contracts, building and testing web 3.0 applications
-- 💞️ I'm open to collaborate on ...
-    - Security audits and smart contract review
-    - Building defi primitives
+- 👋 Hi, I'm @0kage-eth. Security researcher and private auditor at [Cyfrin](https://www.cyfrin.io/), and a risk analyst by inclination.
+- 🔐 **Security.** Three-plus years auditing smart contracts across bridges, liquid staking, account abstraction, RWA and securities tokenization, stablecoins and DEXs. Every publicly disclosable report is listed below.
+- 📊 **Risk.** I study how onchain financial exposures fail, especially where DeFi liquidity, protocol controls and offchain RWA claims meet. I like following liquidity flows and asset economics: who holds what, how it is backed, how it can be redeemed, and what breaks when everyone wants out at once. The goal is to turn that evidence into limits, scenarios and monitoring conditions, not just findings.
+- 🧭 I believe in capital markets, hard money, sovereignty and the frictionless exchange of capital, ideas and culture. That is what draws me to crypto and defi. I play long-term positive-sum games.
+- 💞️ Open to collaborate on:
+    - Security audits and smart contract reviews
+    - Risk research: protocol and asset risk assessments, liquidity analysis, incident replays
     - Bug bounties
-    - Security research
+    - Governance risk discussions
 
-This page is the single index of my public work: every audit, risk report, governance forum response and article I write is listed below. _Last updated: 2026-09-29_
+This page is the single index of my public work: every audit, risk assessment, governance forum response and article I write is listed here. _Last updated: 2026-09-29_
 
 # Security Audits
 
@@ -69,9 +69,11 @@ This page is the single index of my public work: every audit, risk report, gover
 | 43 | 2023-06-13 | Bankless/Earni.fi DropClaim | Airdrop | [Report](https://github.com/Cyfrin/cyfrin-audit-reports/blob/main/reports/2023-06-13-cyfrin-drop-claim-report-v2.pdf) |
 | 44 | 2023-06-01 | Sudoswap sudoAMM v2 | DEX/AMM, NFT | [Report](https://github.com/Cyfrin/cyfrin-audit-reports/blob/main/reports/2023-06-01-sudoswap-report.pdf) |
 
-# Risk Reports
+# Risk Research
 
-_No risk reports published yet._
+Risk assessments, liquidity analyses, incident replays, tools and reproducible calculations. This section is new and will grow; audits above remain the bulk of the record for now.
+
+_No risk research published yet._
 
 # Governance Forum Responses
 

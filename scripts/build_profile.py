@@ -10,7 +10,7 @@ Build the GitHub profile README from:
   2. data/audit_overrides.json  - public reports to force-include (old reports whose markdown
                                   has no auditor block)
   3. data/private_audits.json   - REDACTED (private) audits, referenced by README row
-  4. data/risk_reports.json     - risk reports
+  4. data/risk_research.json    - risk assessments, incident replays, tools, notes
   5. data/governance.json       - governance forum responses
   6. data/articles.json         - blogs / articles
 
@@ -316,7 +316,7 @@ def main():
     private = private_audit_entries(rows)
     log(f"  {len(public)} public audits, {len(private)} private audits")
 
-    risk = load_json(os.path.join(DATA_DIR, "risk_reports.json"), [])
+    risk = load_json(os.path.join(DATA_DIR, "risk_research.json"), [])
     gov = load_json(os.path.join(DATA_DIR, "governance.json"), [])
     articles = load_json(os.path.join(DATA_DIR, "articles.json"), [])
 
@@ -328,9 +328,9 @@ def main():
         "{{AUDIT_PUBLIC_COUNT}}": str(len(public)),
         "{{AUDIT_PRIVATE_COUNT}}": str(len(private)),
         "{{AUDITS_TABLE}}": render_audit_table(public + private),
-        "{{RISK_REPORTS_TABLE}}": render_simple_table(
-            risk, [("Date", "date"), ("Protocol", "protocol"), ("Title", "title"), ("Link", "link")],
-            "No risk reports published yet."),
+        "{{RISK_RESEARCH_TABLE}}": render_simple_table(
+            risk, [("Date", "date"), ("Type", "type"), ("Protocol / Asset", "protocol"), ("Title", "title"), ("Link", "link")],
+            "No risk research published yet."),
         "{{GOVERNANCE_TABLE}}": render_simple_table(
             gov, [("Date", "date"), ("Forum / DAO", "forum"), ("Topic", "title"), ("Link", "link")],
             "No governance responses published yet."),

@@ -20,9 +20,10 @@ Report date and protocol type are taken from the Cyfrin README. A fully manual e
 {"report_date": "2025-03-01", "type": "Lending, Vault", "note": "Private"}
 ```
 
-## risk_reports.json
+## risk_research.json
+`type` is free text, e.g. Assessment, Incident replay, Liquidity analysis, Tool, Note.
 ```json
-{"date": "2026-01-15", "protocol": "Aave", "title": "GHO peg risk assessment", "link": "https://..."}
+{"date": "2026-01-15", "type": "Assessment", "protocol": "Aave / GHO", "title": "GHO peg risk assessment", "link": "https://..."}
 ```
 
 ## governance.json
