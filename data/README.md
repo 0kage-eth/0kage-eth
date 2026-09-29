@@ -32,6 +32,8 @@ Report date and protocol type are taken from the Cyfrin README. A fully manual e
 ```
 
 ## articles.json
+Medium posts are pulled automatically from the RSS feed (cached in `medium_articles.json`).
+Use this file only for articles published elsewhere (Cyfrin blog, Substack, etc.):
 ```json
-{"date": "2026-01-15", "title": "Title", "venue": "Medium", "link": "https://..."}
+{"date": "2026-01-15", "title": "Title", "venue": "Cyfrin Blog", "link": "https://..."}
 ```

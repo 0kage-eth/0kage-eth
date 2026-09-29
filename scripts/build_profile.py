@@ -12,7 +12,9 @@ Build the GitHub profile README from:
   3. data/private_audits.json   - REDACTED (private) audits, referenced by README row
   4. data/risk_research.json    - risk assessments, incident replays, tools, notes
   5. data/governance.json       - governance forum responses
-  6. data/articles.json         - blogs / articles
+  6. data/articles.json         - blogs / articles published outside Medium
+  7. Medium RSS feed            - articles at https://medium.com/@0kage, cached in
+                                  data/medium_articles.json (used if the feed is unreachable)
 
 Usage:
   python3 scripts/build_profile.py                 # rebuild README.md
@@ -40,6 +42,8 @@ OUTPUT = os.path.join(ROOT, "README.md")
 CYFRIN_REPO = "Cyfrin/cyfrin-audit-reports"
 CYFRIN_BRANCH = "main"
 RAW_BASE = f"https://raw.githubusercontent.com/{CYFRIN_REPO}/{CYFRIN_BRANCH}"
+MEDIUM_FEED = "https://medium.com/feed/@0kage"
+MEDIUM_CACHE = os.path.join(DATA_DIR, "medium_articles.json")
 API_MD_LIST = f"https://api.github.com/repos/{CYFRIN_REPO}/contents/reports_md?ref={CYFRIN_BRANCH}"
 BLOB_BASE = f"https://github.com/{CYFRIN_REPO}/blob/{CYFRIN_BRANCH}"
 
@@ -262,6 +266,37 @@ def render_audit_table(entries):
 
 
 # --------------------------------------------------------------------------- #
+# Medium articles
+# --------------------------------------------------------------------------- #
+def medium_articles():
+    """Articles from the Medium RSS feed as {date, title, venue, link}.
+    Falls back to the cached copy if the feed cannot be fetched."""
+    import xml.etree.ElementTree as ET
+    from email.utils import parsedate_to_datetime
+
+    try:
+        root = ET.fromstring(fetch(MEDIUM_FEED))
+    except Exception as exc:
+        log(f"  WARNING could not fetch Medium feed ({exc}); using cached copy")
+        return load_json(MEDIUM_CACHE, [])
+    items = []
+    for it in root.findall(".//item"):
+        pub = parsedate_to_datetime(it.findtext("pubDate")).date().isoformat()
+        items.append({
+            "date": pub,
+            "title": " ".join(it.findtext("title").split()),
+            "venue": "Medium",
+            "link": it.findtext("link").split("?")[0],
+        })
+    # Medium only serves the latest 10 posts; keep older ones from the cache.
+    cached = {a["link"]: a for a in load_json(MEDIUM_CACHE, [])}
+    cached.update({a["link"]: a for a in items})
+    merged = sorted(cached.values(), key=lambda a: a["date"], reverse=True)
+    save_json(MEDIUM_CACHE, merged)
+    return merged
+
+
+# --------------------------------------------------------------------------- #
 # generic tables for manually curated sections
 # --------------------------------------------------------------------------- #
 def render_simple_table(items, columns, empty_msg):
@@ -318,7 +353,11 @@ def main():
 
     risk = load_json(os.path.join(DATA_DIR, "risk_research.json"), [])
     gov = load_json(os.path.join(DATA_DIR, "governance.json"), [])
-    articles = load_json(os.path.join(DATA_DIR, "articles.json"), [])
+    log("Fetching Medium feed ...")
+    articles = medium_articles()
+    seen = {a["link"] for a in articles}
+    articles += [a for a in load_json(os.path.join(DATA_DIR, "articles.json"), []) if a.get("link") not in seen]
+    log(f"  {len(articles)} articles")
 
     with open(TEMPLATE, encoding="utf-8") as f:
         template = f.read()

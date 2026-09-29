@@ -78,7 +78,14 @@ _No governance responses published yet._
 
 # Blogs & Articles
 
-_No articles published yet._
+| S.No | Date | Title | Published At | Link |
+| ---: | --- | --- | --- | --- |
+| 1 | 2024-09-23 | 0Kage Diaries Chapter 6 — Understanding EigenLayer | Medium | [Link](https://medium.com/@0kage/0kage-diaries-chapter-6-understanding-eigenlayer-83fac51c8fbb) |
+| 2 | 2024-06-08 | 0Kage Diaries Chapter 5 — Hedgey Finance | Medium | [Link](https://medium.com/@0kage/0kage-diaries-chapter-5-hedgey-finance-4da4ade97dc7) |
+| 3 | 2024-04-07 | 0Kage Diaries Chapter 4 — Transit Finance | Medium | [Link](https://medium.com/@0kage/0kage-diaries-chapter-4-transit-finance-cb043307b97f) |
+| 4 | 2024-03-04 | 0Kage Diaries Chapter 3 — Barley Finance | Medium | [Link](https://medium.com/@0kage/0kage-diaries-chapter-3-barley-finance-180440407fda) |
+| 5 | 2024-02-25 | Hack Series Deep Dive Chapter 2 — Affine | Medium | [Link](https://medium.com/@0kage/hack-series-deep-dive-chapter-2-affine-da2d7b0bbefd) |
+| 6 | 2023-09-07 | 0Kage Diaries Chapter 1 — Enzyme Finance | Medium | [Link](https://medium.com/@0kage/hack-series-deep-dive-chapter-1-enzyme-finance-90f4d85c067e) |
 
 # Contact Me
 - 📫 How to reach me ... mail me at 0kage.eth@gmail.com.
