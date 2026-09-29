@@ -1,15 +1,12 @@
-<!--
-  README.md is GENERATED from README.template.md by scripts/build_profile.py.
-  Edit this template (or the JSON files in data/) and re-run:
-      python3 scripts/build_profile.py
-  Do not edit README.md by hand - your changes will be overwritten.
--->
-
 # About Me
-- 👋 Hi, I'm @0kage-eth. Security researcher and private auditor at [Cyfrin](https://www.cyfrin.io/), and a risk analyst by inclination.
+- 👋 Hi, I'm @0kage-eth. Security researcher and private auditor at [Cyfrin](https://www.cyfrin.io/), and a risk analyst.
 - 🔐 **Security.** Four-plus years auditing smart contracts across bridges, liquid staking, account abstraction, RWA and securities tokenization, stablecoins and DEXs. Every publicly disclosable report is listed below.
 - 📊 **Risk.** I study how onchain financial exposures fail, especially where DeFi liquidity, protocol controls and offchain RWA claims meet. I like following liquidity flows and asset economics: who holds what, how it is backed, how it can be redeemed, and what breaks when everyone wants out at once. The goal is to turn that evidence into limits, scenarios and monitoring conditions, not just findings.
-- 🧭 I believe in capital markets, hard money, sovereignty and the frictionless exchange of capital, ideas and culture. That is what draws me to crypto and defi. I play long-term positive-sum games.
+- 🧭 I believe in capital markets, hard money, sovereignty and the frictionless exchange of capital, ideas and culture.
+- At my core, I believe the best work in crypto happens when you commit to long-term, positive-sum games that build compounding value for everyone involved rather than chasing short term zero-sum distractions
+- My personal work ethic is
+  - show up every day to move the needle just a bit further
+  - have a solution-oriented optimism towards every problem thrown at me.
 - 💞️ Open to collaborate on:
     - Security audits and smart contract reviews
     - Risk research: protocol and asset risk assessments, liquidity analysis, incident replays

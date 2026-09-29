@@ -1,5 +1,7 @@
 # Data files
 
+**README.md is generated.** Edit `README.template.md` (prose) or the JSON files here (tables), then run `python3 scripts/build_profile.py`. Edits made directly to README.md are overwritten on the next build.
+
 Each file is a JSON list. Add an entry, then run `python3 scripts/build_profile.py` from the repo root.
 
 ## audit_overrides.json
