@@ -13,7 +13,7 @@
     - Bug bounties
     - Governance risk discussions
 
-This page is the single index of my public work: every audit, risk assessment, governance forum response and article I write is listed here. _Last updated: 2026-09-29_
+This page is the single index of my public work: every audit, risk assessment, governance forum response and article I write is listed here. _Last updated: 2026-10-05_
 
 # Security Audits
 
